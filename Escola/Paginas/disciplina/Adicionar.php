@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <form method="POST">
 
-<label>género:</label>
+<label>Disciplina:</label>
 <br>
 <input type="text" name="disciplina" required>
 <br>

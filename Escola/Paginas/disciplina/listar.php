@@ -15,15 +15,15 @@ $disciplinas = obterDisciplinas($ligacao);
 <body>
 
 <?php  include "../../Componentes/nav.php"?>
-<h1>Gerir Generos</h1>
+<h1>Gerir Disciplinas</h1>
 
-<a href="adicionar.php" >Adicionar Genero</a>
+<a href="adicionar.php" >Adicionar Disciplina</a>
 
 <table>
 <tr>
     
     <th>ID</th>
-    <th>Genero</th>
+    <th>Disciplina</th>
 </tr>
 
 <?php foreach($disciplinas as $disciplina){ ?>
