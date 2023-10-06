@@ -11,6 +11,7 @@ $ligacao = ligarDB();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
 </head>
@@ -21,7 +22,7 @@ $ligacao = ligarDB();
     <h1>Titulo</h1>
 
     <?php
-    define("MINHA_CONST", "ufcd9952"); //MINHA_CONST  feito para edentificar que e uma constante 
+    define("MINHA_CONST", "escolapro"); //MINHA_CONST  feito para edentificar que e uma constante 
     $nome =10;
     $nome2=5;
     //$res = $nome +$nome2;
