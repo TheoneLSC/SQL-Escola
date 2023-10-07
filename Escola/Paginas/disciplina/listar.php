@@ -11,6 +11,18 @@ $disciplinas = obterDisciplinas($ligacao);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerir Disciplinas</title>
+    <style>
+        .info {
+            border: 1px solid black;
+            width: 400px;
+            height:600px
+            padding: 10px;
+            background-color: crimson;
+            color: black;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
 </head>
 <body
     data-spy="scroll"

@@ -12,6 +12,17 @@ $PRofs = obterprofessores($ligacao);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        .info {
+            border: 1px solid black;
+            width: 400px;
+            padding: 10px;
+            background-color: crimson;
+            color: black;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
 </head>
 <body
     data-spy="scroll"
@@ -21,8 +32,7 @@ $PRofs = obterprofessores($ligacao);
 <?php  include "../../Componentes/nav.php"?>
 <div class="info">
 <h1>Gerir professores</h1>
-
-<a href="adicionar.php" >Adicionar Genero</a>
+<a href="adicionar.php" >Adicionar professor</a>
 
 <table>
 <tr>
