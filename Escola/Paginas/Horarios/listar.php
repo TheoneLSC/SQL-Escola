@@ -10,20 +10,20 @@ $Horarios = obterHorarios($ligacao);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gerir Turno</title>
 </head>
 <body>
 <?php  include "../../Componentes/nav.php"?>
 
-<h1>Gerir Trunos</h1>
+<h1>Gerir Turno</h1>
 
-<a href="adicionar.php" >Adicionar Turnos</a>
+<a href="adicionar.php" >Adicionar Turno</a>
 
 <table>
 <tr>
     
     <th>ID</th>
-    <th>Turnos</th>
+    <th>Turno</th>
 </tr>
 
 <?php foreach($Horarios as $Horario){ ?>
