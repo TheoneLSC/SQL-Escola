@@ -12,10 +12,25 @@ $Cursos = obterCurso($ligacao,$id);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Curso  <?php echo $Cursos["nome"]?></title>
+    <style>
+        .info {
+            border: 1px solid black;
+            width: 400px;
+            padding: 10px;
+            background-color: crimson;
+            color: black;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
-
+<div class="info">
         <h1>Detalhes do Curso <?php echo $Cursos["nome"];?> </h1>
         <p>
             <label> ID: </label><?php echo $Cursos['id'];?> <br>
@@ -35,5 +50,6 @@ $Cursos = obterCurso($ligacao,$id);
         <p>
             <label>id_Turma: </label><?php echo $Cursos ['id_turma']; ?>
         </p>
+</div>
 </body>
 </html>

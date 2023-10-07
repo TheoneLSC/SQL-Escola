@@ -26,15 +26,16 @@
     border-right: #c0c0c0 3px solid;
     opacity: 0.9;}
     .container{
-        font: 16px Century Gothic;
-        color:white;}
+        font: 16px Century Gothic;}
     .dropdown-menu{
-        background-color:#343a40;}
+        background-color:#dc3545;}
     a{
-        color:white;}
+        color:#000000;}
+    li a:hover, .active {
+        color: white;}
     </style>
 </head>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+    <nav class="navbar navbar-expand-sm navbar-primary bg-danger mb-3">
         <div class="container">
             <a class="navbar-brand" href="#">Escola</a>
             <ul class="navbar-nav">
@@ -42,7 +43,7 @@
                 <a class="nav-link" href="/SQL-Escola/Escola/index.php">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Noa tem dependencias</a>
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Não tem dependencias</a>
                     <div class="dropdown-menu">
                         <ul>
                     <li><a href="/SQL-Escola/Escola/Paginas/horarios/listar.php">Horarios</a></li>

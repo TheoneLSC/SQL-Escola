@@ -11,10 +11,26 @@ $generos = obterGeneros($ligacao);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerir Generos</title>
+    <style>
+        .info {
+            border: 1px solid black;
+            width: 400px;
+            padding: 10px;
+            background-color: crimson;
+            color: black;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
 
 <?php  include "../../Componentes/nav.php"?>
+<div class="info">
 <h1>Gerir Generos</h1>
 
 <a href="Adicionar.php" >Adicionar Genero</a>
@@ -41,6 +57,6 @@ $generos = obterGeneros($ligacao);
 
     <?php } ?>
 </table>
-    
+</div>
 </body>
 </html>

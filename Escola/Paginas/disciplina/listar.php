@@ -12,9 +12,14 @@ $disciplinas = obterDisciplinas($ligacao);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerir Disciplinas</title>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
 
 <?php  include "../../Componentes/nav.php"?>
+<div class="info">
 <h1>Gerir Disciplinas</h1>
 
 <a href="adicionar.php" >Adicionar Disciplina</a>
@@ -41,6 +46,6 @@ $disciplinas = obterDisciplinas($ligacao);
 
     <?php } ?>
 </table>
-    
+</div>
 </body>
 </html>

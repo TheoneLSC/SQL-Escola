@@ -12,9 +12,25 @@ $Turmas = obterTurmas($ligacao);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .info {
+            border: 1px solid black;
+            width: 400px;
+            padding: 10px;
+            background-color: crimson;
+            color: black;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
     <?php include "../../Componentes/nav.php"?>  
+<div class="info">
     <h1>Gerir Turmas</h1>
     <a href="adicionar.php">Adicionar Turma</a>
     <table>
@@ -42,6 +58,6 @@ $Turmas = obterTurmas($ligacao);
 
     <?php } ?>
     </table>
-
+</div>
     </body>
     </html>

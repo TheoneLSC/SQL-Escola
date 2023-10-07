@@ -13,9 +13,25 @@ $disci = obterDisciplina($ligacao, $id);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes da Disciplina<?php echo $disci["disciplina"]?></title>
+    <style>
+        .info {
+            border: 1px solid black;
+            width: 400px;
+            padding: 10px;
+            background-color: crimson;
+            color: black;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
+<div class="info">
         <h1>Detalhes da Disciplina <?php echo $disci["disciplina"];?> </h1>
         <p>
             <label> ID: </label><?php echo $disci['id'];?> <br>
@@ -23,5 +39,6 @@ $disci = obterDisciplina($ligacao, $id);
         <p>
             <label> Disciplina: </label><?php echo $disci['disciplina']; ?><br>
         </p>
+    </div>
 </body>
 </html>

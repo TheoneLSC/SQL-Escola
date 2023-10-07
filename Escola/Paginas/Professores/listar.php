@@ -13,9 +13,13 @@ $PRofs = obterprofessores($ligacao);
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
-
+<div class="info">
 <h1>Gerir professores</h1>
 
 <a href="adicionar.php" >Adicionar Genero</a>
@@ -43,6 +47,7 @@ $PRofs = obterprofessores($ligacao);
     </tr>
 
     <?php } ?>
+</div>
 </table>
     
 </body>
