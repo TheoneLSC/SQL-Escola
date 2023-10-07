@@ -25,7 +25,11 @@ $Aluno = obterAluno($ligacao, $id);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Aluno<?php echo $Aluno["nome"]?></title>
 </head>
-<body>
+<body
+    data-spy="scroll"
+    data-target="#main-nav"
+    id="home"
+    class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
 <div class="info">
         <h1>Detalhes do Aluno <?php echo $Aluno["nome"];?> </h1>
