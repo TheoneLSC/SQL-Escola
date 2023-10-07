@@ -19,6 +19,7 @@ function inserirProf($ligacao,$nome,$DataN){
     $stmt = $ligacao->prepare("INSERT INTO professores (nome, DataN) VALUES(:nome, :DataN )");
     $stmt->bindParam(":nome", $nome);
     $stmt->bindParam(":DataN", $DataN);
+    
    
     $stmt->execute();
 

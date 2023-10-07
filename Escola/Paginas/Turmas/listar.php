@@ -51,7 +51,8 @@ $Turmas = obterTurmas($ligacao);
     <td><?php echo $turma ["id_professor"];?></td>
     <td>
         <a href="ver.php?id=<?php echo $turma ['id']; ?>">Ver</a>
-       
+        <a href="Apagar.php?id=<?php echo $turma ['id'];?>">Apagar</a> <br>
+        <a href="Editar.php?id=<?php echo $turma ['id'];?>">Editar</a>
 
         </td>
     </tr>

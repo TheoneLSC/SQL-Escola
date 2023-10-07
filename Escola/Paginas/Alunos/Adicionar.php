@@ -1,18 +1,17 @@
 <?php 
 include "../../config/config.php";
-include "../../funcs/professores.funcs.php";
-
+include "../../funcs/Alunos.funcs.php";
 
 $ligacao = ligarDB();
 
-
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    
-    $nome = $_POST['nome'];
+    $nome  = $_POST['nome'];
     $DataN  = $_POST['DataN'];
+    $id_genero  = $_POST['id_genero'];
+    
     
 
-    inserirProf($ligacao,$nome,$DataN);
+    inserirAlunos($ligacao,$nome,$DataN,$id_genero);
 }
 ?>
 <!DOCTYPE html>
@@ -20,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inserir novo Professor</title>
+    <title> Inserir novo Aluno</title>
     <style>
         .info {
             border: 1px solid black;
@@ -40,22 +39,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
 <div class="info">
-<h1>Inserir novo Professor</h1>
+<h1>Inserir novo Aluno</h1>
 
 <form method="POST">
 
-<label>Nome:</label>
+<label>nome:</label>
 <br>
 <input type="text" name="nome" required>
 <br>
 <br>
 
+<label>DataN:</label>
+<br>
+<input type="data" name="DataN" value= "<?php echo "0000-00-00"?>" required >
+<br>
+<br>
 
-<label> Data Nascimento </label>
+<label>id_genero:</label>
 <br>
-       
-<input type="data" name="DataN"  value="<?php echo "0000-00-00" ?>" required> Ano-mes-dia
+<input type="int" name="id_genero" required>
 <br>
+<br>
+
+
 
 <input type="submit" value="Adicionar Cliente">
 </form>

@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <label>Turno:</label>
 <br>
-<input type="text" name="turno" required>
+<input type="text" name="turno" value="<?php echo "00:00/00:00" ?>" required>
 <br>
 <br>
 

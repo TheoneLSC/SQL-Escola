@@ -10,7 +10,7 @@ $alunos = obterAlunos($ligacao);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alunos</title>
     <style>
         .info {
             border: 1px solid black;
@@ -53,7 +53,8 @@ $alunos = obterAlunos($ligacao);
     <td><?php echo $aluno ["id_genero"]; ?></td>
     <td>
         <a href="ver.php?id=<?php echo $aluno ['id']; ?>">Ver</a>
-        
+        <a href="Editar.php?id=<?php echo $aluno ['id']; ?>">Editar </a>
+        <a href="Apagar.php?id=<?php echo $aluno ['id']; ?>">Apagar </a>
 
         </td>
     </tr>

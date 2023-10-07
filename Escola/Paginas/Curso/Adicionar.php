@@ -1,18 +1,19 @@
 <?php 
 include "../../config/config.php";
-include "../../funcs/professores.funcs.php";
-
+include "../../funcs/Curso.funcs.php";
 
 $ligacao = ligarDB();
 
-
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $nome  = $_POST['nome'];
+    $duracao  = $_POST['duracao'];
+    $id_horario  = $_POST['id_horario'];
+    $id_disciplina  = $_POST['id_disciplina'];
+    $id_turma  = $_POST['id_turma'];
     
-    $nome = $_POST['nome'];
-    $DataN  = $_POST['DataN'];
     
 
-    inserirProf($ligacao,$nome,$DataN);
+    inserircurso($ligacao ,$nome ,$duracao ,$id_horario ,$id_disciplina ,$id_turma);
 }
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inserir novo Professor</title>
+    <title> Inserir novo Curso</title>
     <style>
         .info {
             border: 1px solid black;
@@ -40,7 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
 <div class="info">
-<h1>Inserir novo Professor</h1>
+<h1>Inserir novo Curso</h1>
 
 <form method="POST">
 
@@ -50,12 +51,31 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <br>
 <br>
 
+<label>duracao:</label>
+<br>
+<input type="text" name="duracao" required>
+<br>
+<br>
 
-<label> Data Nascimento </label>
+<label>id horario:</label>
 <br>
-       
-<input type="data" name="DataN"  value="<?php echo "0000-00-00" ?>" required> Ano-mes-dia
+<input type="int" name="id_horario" required >
 <br>
+<br>
+
+<label>id disciplina:</label>
+<br>
+<input type="int" name="id_disciplina" required>
+<br>
+<br>
+
+<label>id turma:</label>
+<br>
+<input type="int" name="id_turma" required>
+<br>
+<br>
+
+
 
 <input type="submit" value="Adicionar Cliente">
 </form>

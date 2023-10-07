@@ -31,8 +31,8 @@ $Cursos = obterCursos($ligacao);
     class="text-white bg-dark">
     <?php include "../../Componentes/nav.php"?>  
     <div class="info">
-    <h1>Gerir Turmas</h1>
-    <a href="adicionar.php">Adicionar Turma</a>
+    <h1>Gerir Curso</h1>
+    <a href="adicionar.php">Adicionar Curso</a>
     <table>
     <tr>
     <th>id</th>
@@ -53,6 +53,8 @@ $Cursos = obterCursos($ligacao);
     <td><?php echo $Curso ["id_turma"];?></td>
     <td>
         <a href="ver.php?id=<?php echo $Curso ['id']; ?>">Ver</a>
+        <a href="Editar.php?id=<?php echo $Curso ['id']; ?>">Editar</a>
+        <a href="Apagar.php?id=<?php echo $Curso ['id']; ?>">Apagar</a>
         
 
         </td>
