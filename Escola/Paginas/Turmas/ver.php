@@ -32,7 +32,7 @@ $Turma = obterTurma($ligacao,$id);
     class="text-white bg-dark">
 <?php  include "../../Componentes/nav.php"?>
 <div class="info">
-        <h1>Detalhes da Turma <?php echo $Turma["Turma"];?> </h1>
+        <h1>Detalhes da Turma <?php echo $Turma["Turmas"];?> </h1>
         <p>
             <label> ID: </label><?php echo $Turma['id'];?> <br>
         </p>

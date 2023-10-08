@@ -34,7 +34,7 @@ $Horarios = obterHorarios($ligacao);
 
 <a href="adicionar.php" >Adicionar Turno</a>
 
-<table>
+<table border="1" >
 <tr>
     
     <th>ID</th>

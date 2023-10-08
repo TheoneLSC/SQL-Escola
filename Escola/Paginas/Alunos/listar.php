@@ -35,7 +35,8 @@ $alunos = obterAlunos($ligacao);
 <h1>Gerir alunos</h1>
 <a href="adicionar.php" >Adicionar aluno</a>
 
-<table>
+<table border="1" >
+    
 <tr>
     
     <th>ID</th>

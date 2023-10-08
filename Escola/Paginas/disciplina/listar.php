@@ -36,7 +36,7 @@ $disciplinas = obterDisciplinas($ligacao);
 
 <a href="adicionar.php" >Adicionar Disciplina</a>
 
-<table>
+<table border="1" >
 <tr>
     
     <th>ID</th>

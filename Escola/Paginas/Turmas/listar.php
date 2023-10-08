@@ -11,7 +11,7 @@ $Turmas = obterTurmas($ligacao);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Horarios</title>
     <style>
         .info {
             border: 1px solid black;
@@ -33,7 +33,7 @@ $Turmas = obterTurmas($ligacao);
 <div class="info">
     <h1>Gerir Turmas</h1>
     <a href="adicionar.php">Adicionar Turma</a>
-    <table>
+    <table border="1" >
     <tr>
     <th>id</th>
     <th>Turma </th> 

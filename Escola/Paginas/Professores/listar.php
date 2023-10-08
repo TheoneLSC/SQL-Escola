@@ -34,7 +34,7 @@ $PRofs = obterprofessores($ligacao);
 <h1>Gerir professores</h1>
 <a href="adicionar.php" >Adicionar professor</a>
 
-<table>
+<table border="1" >
 <tr>
     
     <th>ID</th>

@@ -15,12 +15,13 @@ $Cursos = obterCursos($ligacao);
     <style>
         .info {
             border: 1px solid black;
-            width: 400px;
+            width: 600px;
             padding: 10px;
             background-color: crimson;
             color: black;
             margin: auto;
             margin-top: 10%;
+        
         }
     </style>
 </head>
@@ -33,7 +34,8 @@ $Cursos = obterCursos($ligacao);
     <div class="info">
     <h1>Gerir Curso</h1>
     <a href="adicionar.php">Adicionar Curso</a>
-    <table>
+    <table border="1" >
+        
     <tr>
     <th>id</th>
     <th>Nome </th> 

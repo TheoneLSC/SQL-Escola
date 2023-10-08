@@ -30,8 +30,9 @@ $Horario = obterHorario($ligacao, $id);
     data-target="#main-nav"
     id="home"
     class="text-white bg-dark">
+    <?php  include "../../Componentes/nav.php"?>
 <div class="info">  
-<?php  include "../../Componentes/nav.php"?>
+
         <h1>Detalhes do Turno <?php echo $Horario["turno"];?> </h1>
         <p>
             <label> ID: </label><?php echo $Horario['id'];?> <br>

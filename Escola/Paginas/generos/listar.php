@@ -35,7 +35,7 @@ $generos = obterGeneros($ligacao);
 
 <a href="Adicionar.php" >Adicionar Genero</a>
 
-<table>
+<table border="1" >
 <tr>
     
     <th>ID</th>

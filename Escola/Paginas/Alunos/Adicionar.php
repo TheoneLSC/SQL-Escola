@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <label>DataN:</label>
 <br>
-<input type="data" name="DataN" value= "<?php echo "0000-00-00"?>" required >
+<input type="data" name="DataN" value= "<?php echo "ano-mes-dia"?>" required >
 <br>
 <br>
 
